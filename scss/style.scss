@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import 'fonts';
+@import 'normalize';
+@import 'layout';
+@import 'elements';
+@import 'header';
+@import 'hero';
+@import 'projects';
+@import 'news';
+@import 'gallery';
+
+body {
+  font: 400 18px/1.6 'Open Sans', sans-serif;
+  color: #2c4058;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-family: Gotham;
+  color: #000;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  //   line-height: 3.6;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1210px;
+}
+
+main {
+  position: relative;
+}
+
+.ba-social {
+  // .ba-social__link
+  display: flex;
+  align-items: center;
+
+  &__link {
+    margin-left: 20px;
+    color: #fff;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.ba-icon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--small {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.ba-section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.ba-section-subtitle {
+  font-family: 'Gotham Book';
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5.4px;
+}
+
+.ba-button {
+  text-decoration: none;
+  color: currentColor;
+  text-transform: uppercase;
+  border: 1px solid #2c4058;
+  height: 50px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
